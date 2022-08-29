@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Faculty Form</title>
+</head>
+<body>
+
+<div th:insert="header.html"></div>  <br>
+
+	<div class="container">
+
+		<div class="card">
+
+			<div class="card-header bg-primary text-center text-white fs-2">Faculty Form</div>
+
+			<div class="card-body">
+
+				<form action="/facultyform" method="post">
+				
+					<div class="row p-2">
+						<div class="col-4">Serial Number : </div>
+						<div class="col-6">
+							<input type="number" name="sNo" class="form-control">
+						</div>
+					</div>
+
+					<div class="row p-2">
+						<div class="col-4">Faculty Name : </div>
+						<div class="col-6">
+							<input type="text" name="fname" class="form-control">
+						</div>
+					</div>
+
+					<div class="row p-2">
+						<div class="col-4">Code :</div>
+						<div class="col-6">
+							<input type="number" name="code" class="form-control">
+						</div>
+					</div>
+
+
+					<div class="row p-2">
+						<div class="col-4">Description : </div>
+						<div class="col-6">
+							<input type="text" name="description" class="form-control">
+						</div>
+					</div>
+
+
+					<div class="row p-2">
+						<div class="col-4"></div>
+						<div class="col-6">
+							<input type="submit" value="Save" class="btn btn-success">
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+			<div class="card-footer bg-warning text-center">copyright@2022</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
